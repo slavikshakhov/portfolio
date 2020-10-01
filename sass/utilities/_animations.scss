@@ -1,0 +1,20 @@
+@keyframes slideToRight {
+  from {
+    transform: translateX(-100%);
+    display: block;
+  }
+  to {
+    transform: translateX(0);
+    display: block;
+  }
+}
+@keyframes slideToLeft {
+  from {
+    transform: translateX(0);
+    display: block;
+  }
+  to {
+    transform: translateX(-100%);
+    display: block;
+  }
+}
