@@ -13,6 +13,10 @@
     width: 9rem;
     height: 9rem;
   }
+  &-tiny {
+    width: 6rem;
+    height: 6rem;
+  }
   &__text-big {
     font-size: $font-sm;
     letter-spacing: 0 !important;
@@ -20,6 +24,11 @@
   }
   &__text-small {
     font-size: 1.2rem;
+    letter-spacing: 0 !important;
+    font-weight: 600;
+  }
+  &__text-tiny {
+    font-size: 1rem;
     letter-spacing: 0 !important;
     font-weight: 600;
   }

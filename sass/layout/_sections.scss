@@ -3,33 +3,65 @@
   padding: 2rem;
   background-color: lightgray;
 }
-.about {
-  padding: 1rem;
-  padding-bottom: 3rem !important;
-  padding-top: 0 !important;
-  &__content {
-    width: 50%;
-    display: flex;
-    &--text {
-      flex-direction: column;
-      padding: $padding-lg;
-      font-size: $font-default;
 
-      &-1 {
-        padding: 1rem 0;
-      }
-    }
-    &--heading {
+    
+.about {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(-7deg);
+  margin: 5rem 0;
+  border-bottom: 12px solid $color-primary-light;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.technologies {
+  width: 100%;
+  padding: 8rem 2rem;
+  display: flex;
+  &-heading {
       font-size: $font-md;
       font-weight: 600;
       color: $color-primary-dark;
       text-transform: uppercase;
     }
-    &--icons {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: $padding-lg;
-    }
+  &-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;      
+  }
+  &-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: -1.5rem; 
+    &-top {
+      margin-bottom: 0 !important;
+    }   
+  }
+  &-type {
+    width: 12rem;    
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;    
+  }
+  &-body {
+    width: auto;    
+    display: flex;
+    align-items: center;
+  }
+  &-col {
+    width: 10rem;
+  }
+  &-more {
+    font-size: 5rem;
+    font-weight: 600;
   }
 }
 .projects {
@@ -52,41 +84,47 @@
   }
 
   &__container {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
 
 .contact {
   padding: 15rem 0;
+  /*
   background-image: linear-gradient(
     to right bottom,
     $color-primary-light,
     $color-primary-dark
   );
-
+  */
   width: 100%;
   &__container {
     width: 70%;
     background-image: linear-gradient(
         105deg,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 50%,
+        rgba($color-white, 0.8) 0%,
+        rgba($color-white, 0.8) 50%,
         transparent 50%
       ),
       url(../images/valencia.jpg);
     background-size: 100%;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
-
+    //box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+    box-shadow: 5px 10px 8px #888888; 
     height: 50rem;
 
     &-form {
       width: 50%;
       padding: 6rem;
     }
+  }
+}
+@media screen and (max-width: 1460px) {
+  .technologies {
+    flex-direction: column;
   }
 }

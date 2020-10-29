@@ -10,7 +10,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
       rel="stylesheet"
-    />
+    />    
+    <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/57cbb27f9f.js"
@@ -20,28 +22,28 @@
   </head>
   <body class="">
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onclick="isChecked()" />
 
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
 
-      <div class="navigation__background">&nbsp;</div>
+      <div class="navigation__background" id="navigation-background">&nbsp;</div>
 
-      <nav class="navigation__nav">
+      <nav class="navigation__nav" id="navigation-nav">
         <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">About Me</a>
+          <li class="navigation__item" onclick="closeNavigation()">
+            <a href="#about" class="navigation__link">About Me</a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Skills</a>
+          <li class="navigation__item" onclick="closeNavigation()">
+            <a href="#technologies" class="navigation__link">Skills</a>
           </li>
 
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">My Projects</a>
+          <li class="navigation__item" onclick="closeNavigation()">
+            <a href="#my-projects" class="navigation__link">My Projects</a>
           </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact</a>
+          <li class="navigation__item" onclick="closeNavigation()">
+            <a href="#contact" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -50,15 +52,192 @@
       <div class="header__logo-box">
         <img src="" alt="Logo" class="header__logo" />
       </div>
-
       <div class="header__text-box">
         <h1 class="heading heading--primary">Portfolio</h1>
         <h3 class="heading heading--secondary">Slavik Shakhov</h3>
 
-        <a href="" class="btn btn--white btn--animated">See Projects</a>
+        <a href="#my-projects" class="btn btn--white btn--animated">See Projects</a>
       </div>
     </header>
-    <section class="about between-center">
+    <section class="about" id="about">
+      <blockquote>
+        I am a pharmacist licensed in Canada and Germany but my passion is programming. I focus on Javascript and I built compolex full stack applications in React and Node.js. I have also experimented with many other programming languages and frameworks (Angular, Vue, Gatsby, Laravel, Phoenix etc). But the most exciting for me is to solve problems and learn to advance my knowledge further
+      </blockquote>
+    </section>
+    <section class="technologies-section" id="technologies">
+      <h2 class="technologies-heading self-center" style="margin-top:10rem; margin-bottom:1.5rem">
+        languages and technologies i use
+      </h2>
+      <div class="technologies">
+        <div class="technologies-half">
+          <div class="technologies-row technologies-row-top">
+            <div class="technologies-type">Client</div>
+            <div class="technologies-body">
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">REACT</p>
+                  <img width="40px" height="" src="images/react.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <img width="80px" height="" src="images/gatsby.png" alt="" />
+                </div>
+              </div>
+        
+        
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">ANGULAR</p>
+                  <img width="40px" height="" src="images/angular.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">VUE</p>
+                  <img width="40px" height="" src="images/vue.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="technologies-row">
+            <div class="technologies-type">Server</div>
+            <div class="technologies-body">
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">EXPRESS</p>
+                  <img width="40px" height="" src="images/node.png" alt="" />
+                </div>
+              </div>
+        
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">PHP</p>
+                  <p class="technology__text-small">LARAVEL</p>
+                  <img width="40px" height="" src="images/laravel.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="technologies-row">
+            <div class="technologies-type">Database</div>
+            <div class="technologies-body">
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">MYSQL</p>
+                  <img width="60px" height="" src="images/mysql.png" alt="" />
+                </div>
+              </div>
+        
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">MONGO</p>
+                  <p class="technology__text-small">DB</p>
+                  <img width="40px" height="" src="images/mongodb.png" alt="" />
+                </div>
+              </div>
+        
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">FIREBASE</p>
+                  <img width="35px" height="" src="images/firebase.png" alt="" />
+                </div>
+              </div>
+        
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <img width="60px" height="" src="images/graphql.png" alt="" />
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        <div class="technologies-half">
+          <div class="technologies-row technologies-row-top">
+            <div class="technologies-type">Styling</div>
+            <div class="technologies-body">
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">CSS-3</p>
+                  <img width="75px" height="" src="images/css.png" alt="" />
+                </div>
+              </div>
+        
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">SASS</p>
+                  <img width="40px" height="" src="images/sass.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">BOOTSTRAP</p>
+                  <img width="40px" height="" src="images/bootstrap.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">TACHYONS</p>
+                  <img width="40px" height="" src="images/tachyons.svg" alt="" />
+                </div>
+        
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">TAILWIND</p>
+                  <img width="40px" height="" src="images/tailwind.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">MATERIAL</p>
+                  <p class="technology__text-small">UI</p>
+                  <img width="40px" height="" src="images/material-ui.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">ANGULAR</p>
+                  <p class="technology__text-small">MATERIAL</p>
+                  <img width="35px" height="" src="images/angular-material.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="technologies-row">
+            <div class="technologies-type">Languages</div>
+            <div class="technologies-body">
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">JAVASCRIPT</p>
+                  <img width="70px" height="" src="images/js.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">TYPESCRIPT</p>
+                  <img width="40px" height="" src="images/ts.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <img width="70px" height="" src="images/php.png" alt="" />
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      
+    </section>
+
+    <!--  
+    <section class="about between-center" id="technologies">
       <div class="about__content about__content--text center">
         <div class="about__content--text-1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
@@ -174,76 +353,185 @@
         </div>
       </div>
     </section>
+
+
+    -->
+    
+
     <div class="" id="popup-container">
-      <section class="projects" id="">
+      <section class="projects" id="my-projects">
         <div class="projects__container">
           <div class="project-card">
             <div class="project-card__content">
-              <h3 class="">
-                Explore the world
-              </h3>
+              <h3 class="project-card__heading">Home Finances App</h3>
               <p class="project-card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, ipsum sapiente aspernatur.
+                Interactive application with authentication to track personal expenses, incomes and check history of all transactions for a specific date
               </p>
+              <div class="project-card__list">
+                <div class="project-card__col">
+                  <p class="project-card__item">React</p>
+                  <p class="project-card__item">Node.js</p>
+                  <p class="project-card__item">MySQL</p>                  
+                </div>
+                <div class="project-card__col">
+                  <p class="project-card__item">Tailwind CSS</p>
+                  <p class="project-card__item">Sequelize</p>                  
+                </div>
+              </div>
             </div>
             <div class="project-card__btn-container">
-              <button class="" onclick="projectPopup('finances')">
-                Check more..
+              <button class="project-card__btn" onclick="projectPopup('finances')">
+                details
               </button>
             </div>
           </div>
           <div class="project-card">
             <div class="project-card__content">
-              <h3 class="">
-                Explore the world
-              </h3>
+              <h3 class="project-card__heading">Languages Exchange App</h3>
               <p class="project-card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, ipsum sapiente aspernatur.
+            Authentication, complex database relationships. Different forms with custom validation. Chat room and contact via email.
               </p>
+              <div class="project-card__list">
+                <div class="project-card__col">
+                  <p class="project-card__item">React</p>
+                  <p class="project-card__item">Redux</p>
+                  <p class="project-card__item">Node.js</p>
+                </div>
+                <div class="project-card__col">
+                  <p class="project-card__item">Socket.io</p>
+                  <p class="project-card__item">MySQL</p>
+                </div>
+              </div>
             </div>
             <div class="project-card__btn-container">
-              <button class="" onclick="projectPopup('weightloss')">
-                Check more..
+              <button class="project-card__btn" onclick="projectPopup('tandem')">
+                Details
               </button>
             </div>
           </div>
           <div class="project-card">
             <div class="project-card__content">
-              <h3 class="">
-                Explore the world
-              </h3>
+              <h3 class="project-card__heading">Weight Loss App</h3>
               <p class="project-card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, ipsum sapiente aspernatur.
+                Authentication, complex forms with custom validation, integration with Firestore database
               </p>
+              <div class="project-card__list">
+                <div class="project-card__col">
+                  <p class="project-card__item">Angular</p>
+                  <p class="project-card__item">Material Design</p>
+                  <p class="project-card__item">AngularFirestore</p>
+                </div>
+                <div class="project-card__col">
+                  <p class="project-card__item">Firebase</p>
+                  <p class="project-card__item">Firestore</p>
+                </div>
+              </div>
             </div>
             <div class="project-card__btn-container">
-              <button class="" onclick="projectPopup('checkers')">
-                Check more..
+              <button class="project-card__btn" onclick="projectPopup('weightloss')">
+                Details
               </button>
             </div>
           </div>
           <div class="project-card">
             <div class="project-card__content">
-              <h3 class="">
-                Explore the world
-              </h3>
+              <h3 class="project-card__heading">Live Chat App</h3>
               <p class="project-card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aperiam, ipsum sapiente aspernatur.
+                Chat with all users (public) or with a selected logged in user (private chat). Socket.io was employed.
               </p>
+              <div class="project-card__list">
+                <div class="project-card__col">
+                  <p class="project-card__item">React</p>
+                  <p class="project-card__item">Tachyons</p>                  
+                </div>
+                <div class="project-card__col">
+                  <p class="project-card__item">Socket.io</p>
+                  <p class="project-card__item">Node.js</p>                  
+                </div>
+              </div>
             </div>
             <div class="project-card__btn-container">
-              <button class="" onclick="projectPopup('tandem')">
-                Check more..
+              <button class="project-card__btn" onclick="projectPopup('chat-app')">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__content">
+              <h3 class="project-card__heading">Recepes Finder App</h3>
+              <p class="project-card__text">
+                Simple front end application allowing users to search recepes based on a product entered. Use of a third party API to fetch data. 
+              </p>
+              <div class="project-card__list">
+                <div class="project-card__col">
+                  <p class="project-card__item">React</p>
+                  <p class="project-card__item">3rd party API</p>
+                  <p class="project-card__item">MySQL</p>
+                </div>
+                <div class="project-card__col">                  
+                </div>
+              </div>
+            </div>
+            <div class="project-card__btn-container">
+              <button class="project-card__btn" onclick="projectPopup('recepes-app')">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__content">
+              <h3 class="project-card__heading">Checkers App</h3>
+              <p class="project-card__text">
+                Checkers game, written from scratch (both javascript and css parts). Still work in progress, will be extended to the full stack application with Express.js server and MySQL database.
+              </p>
+              <div class="project-card__list">
+                <div class="project-card__col">
+                  <p class="project-card__item">React</p>
+                  <p class="project-card__item">Redux</p>                  
+                </div>
+                <div class="project-card__col">                  
+                </div>
+              </div>
+            </div>
+            <div class="project-card__btn-container">
+              <button class="project-card__btn" onclick="projectPopup('checkers')">
+                Details
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__content">
+              <h3 class="project-card__heading">Furniture Store Startup</h3>
+              <p class="project-card__text">
+                Searching furniture items based on category. All data is static, stored in GraphQL (Contentful).
+              </p>
+              <div class="project-card__list">
+                <div class="project-card__col">
+                  <p class="project-card__item">Gatsby</p>
+                  <p class="project-card__item">React</p>
+                </div>
+                <div class="project-card__col">
+                  <p class="project-card__item">Netlify</p>
+                  <p class="project-card__item">Contentful</p>
+                  <p class="project-card__item">GraphQL</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__btn-container">
+              <button class="project-card__btn" onclick="projectPopup('furniture')">
+                Details
               </button>
             </div>
           </div>
         </div>
       </section>
+     
       <div class="" id="project-popup">
+         <!-- 
+           ///////////////////////////////////////////////
+
+        Finance app details
+      -->
         <div class="popup-content" id="finances">
           <div class="popup-content__close">
             <button
@@ -254,20 +542,31 @@
             </button>
           </div>
           <div class="popup-content__header">
-            <div class="popup-content__header-icons">
-              <div class="technology technology-small center-column">
-                <p class="technology__text-small">REACT</p>
-                <img width="60px" height="" src="images/react.png" alt="" />
-              </div>
-              <div class="technology technology-small center-column">
-                <p class="technology__text-small">EXPRESS</p>
-                <img width="60px" height="" src="images/node.png" alt="" />
-              </div>
-              <div class="technology technology-small center-column">
-                <p class="technology__text-small">MYSQL</p>
-                <img width="100px" height="" src="images/mysql.png" alt="" />
+            <div class="popup-content__btns">
+              <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/homefinances-client/"
+              target="_blank" rel="noopener noreferrer">Live Project</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/homefinances-client" target="_blank" rel="noopener noreferrer">Source Code - Client</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/homefinances-server"
+              target="_blank" rel="noopener noreferrer">Source Code - Server</a>
+              <a class="popup-content__btns--btn">Presentation Video</a>
+            </div>
+            <div class="popup-content__icons-container">
+              <div class="popup-content__header-icons">
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">REACT</p>
+                  <img width="60px" height="" src="images/react.png" alt="" />
+                </div>
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">EXPRESS</p>
+                  <img width="60px" height="" src="images/node.png" alt="" />
+                </div>
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">MYSQL</p>
+                  <img width="100px" height="" src="images/mysql.png" alt="" />
+                </div>
               </div>
             </div>
+            
           </div>
           <div class="popup-content__description">
             <div class="popup-content__description-title">
@@ -311,8 +610,8 @@
                 <div class="popup-content__body-column-item">Forms</div>
                 <div class="popup-content__body-column-value">
                   <p>
-                    No libraries used, only ES6, CCS, with validation and error
-                    messages
+                    No libraries used, only ES6, CCS, with my custom validation
+                    and error messages
                   </p>
                 </div>
               </div>
@@ -380,41 +679,778 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Client</div>
                 <div class="popup-content__body-column-value">
-                  <p>
-                    React deployed to GitHub Pages
-                  </p>
+                  <p>React deployed to GitHub Pages</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">API</div>
                 <div class="popup-content__body-column-value">
-                  <p>
-                    Node server and MySQL database deployed to Heroku
-                  </p>
+                  <p>Node server and MySQL database deployed to Heroku</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="popup-content" id="weightloss">
-          <div class="popup-content__header">Weightloss</div>
-          <div class="popup-content__body">lalalallala</div>
-        </div>
-        <div class="popup-content" id="checkers">
-          <div class="popup-content__header">Checkers app</div>
-          <div class="popup-content__body">lalalallala</div>
-        </div>
+
+        <!-- 
+          Language exchage app -- Tandem app
+        -->
         <div class="popup-content" id="tandem">
-          <div class="popup-content__header">Tandem app</div>
-          <div class="popup-content__body">lalalallala</div>
+          <div class="popup-content__close">
+            <button
+              class="popup-content__close-btn"
+              onclick="hideProjectPopup()"
+            >
+              x
+            </button>
+          </div>
+          <div class="popup-content__header">
+            <div class="popup-content__btns">
+              <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/tandem-react-client/" target="_blank"
+                rel="noopener noreferrer">Live Project</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/tandem-react-client" target="_blank"
+                rel="noopener noreferrer">Source Code - Client</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/tandem-node-server" target="_blank"
+                rel="noopener noreferrer">Source Code - Server</a>
+              <a class="popup-content__btns--btn">Presentation Video</a>
+            </div>
+            <div class="popup-content__header-icons">
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">REACT</p>
+                <img width="60px" height="" src="images/react.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">REDUX</p>
+                <img width="60px" height="" src="images/redux.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">EXPRESS</p>
+                <img width="60px" height="" src="images/node.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">SOCKET.IO</p>
+                <img width="50px" height="" src="images/socketio.svg" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">MYSQL</p>
+                <img width="100px" height="" src="images/mysql.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="popup-content__description">
+            <div class="popup-content__description-title">
+              <h2>Languages Exchange App (Tandem)</h2>
+            </div>
+            <div class="popup-content__description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis quidem incidunt odio ducimus accusamus facilis.
+              Tempora numquam cupiditate tempore magni possimus! Sunt, sapiente
+              saepe ab officia eveniet quo distinctio fugit aliquid a atque
+              quibusdam perspiciatis laudantium laborum doloremque qui?
+            </div>
+          </div>
+          <div class="popup-content__body">
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Frontend
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Framework</div>
+                <div class="popup-content__body-column-value">
+                  <p>React with React Hooks</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Global State</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Redux library
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Styling</div>
+                <div class="popup-content__body-column-value">
+                  <p>Custom CSS</p>
+                  <p>Media queries for responsiveness</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Forms</div>
+                <div class="popup-content__body-column-value">
+                  <p>
+                    <span class="popup-content__body-column-marker">
+                      Login and registration:
+                    </span>
+                    my custom css/sass/javascript form with validations and
+                    error messages
+                  </p>
+                  <div class="popup-content__body-column-space"></div>
+                  <p>
+                    <span class="popup-content__body-column-marker">
+                      Languages form:
+                    </span>
+                    React Form Hooks library
+                  </p>
+                </div>
+              </div>
+
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>API calls</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  AJAX calls with fetch
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Chat</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Socket.io library - socket.io-client
+                </div>
+              </div>
+            </div>
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Server
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Framework</div>
+                <div class="popup-content__body-column-value">
+                  <p>Express.js, using Node.js</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Authentication</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  <p>User authentication and validation</p>
+                  <p>Jsonwebtoken, bcrypt</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">ORM</div>
+                <div class="popup-content__body-column-value">
+                  <p>To interract with MySQL sequelize was used</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Database
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Database SQL</div>
+                <div class="popup-content__body-column-value">
+                  <p>
+                    <span class="popup-content__body-column-marker">
+                      SQL type:
+                    </span>
+                    MySQL relational database
+                  </p>
+                  <div class="popup-content__body-column-space"></div>
+                  <p>
+                    <span class="popup-content__body-column-marker">
+                      Relationships:
+                    </span>
+                    One to One, One to Many, Many to Many
+                  </p>
+                </div>
+              </div>
+              <h3
+                class="self-center popup-content__body-column-heading margin-top-md"
+              >
+                Deployment
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Client</div>
+                <div class="popup-content__body-column-value">
+                  <p>React deployed to GitHub Pages</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">API</div>
+                <div class="popup-content__body-column-value">
+                  <p>Node server and MySQL database deployed to Heroku</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- 
+          Weight loss app 
+        -->
+        <div class="popup-content" id="weightloss">
+          <div class="popup-content__close">
+            <button class="popup-content__close-btn" onclick="hideProjectPopup()">
+              x
+            </button>
+          </div>
+          <div class="popup-content__header">
+            <div class="popup-content__btns">
+              <a class="popup-content__btns--btn" href="https://weight-loss-app-146e6.firebaseapp.com/login" target="_blank"
+                rel="noopener noreferrer">Live Project</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/slavik-weight-loss-app" target="_blank"
+                rel="noopener noreferrer">Source Code</a>              
+              <a class="popup-content__btns--btn">Presentation Video</a>
+            </div>
+            <div class="popup-content__header-icons">
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">ANGULAR</p>
+                <img width="60px" height="" src="images/angular.png" alt="" />
+              </div>
+                <div class="technology technology-small center-column">
+                  <p class="technology__text-small">MATERIAL</p>
+                  <p class="technology__text-small">UI</p>
+                  <img width="50px" height="" src="images/material-ui.png" alt="" />
+                </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">FIREBASE</p>
+                <img width="40px" height="" src="images/firebase.png" alt="" />
+              </div>
+              
+            </div>
+          </div>
+          <div class="popup-content__description">
+            <div class="popup-content__description-title">
+              <h2>Weight Loss App</h2>
+            </div>
+            <div class="popup-content__description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis quidem incidunt odio ducimus accusamus facilis.
+              Tempora numquam cupiditate tempore magni possimus! Sunt, sapiente
+              saepe ab officia eveniet quo distinctio fugit aliquid a atque
+              quibusdam perspiciatis laudantium laborum doloremque qui?
+            </div>
+          </div>
+          <div class="popup-content__body">
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Frontend
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Framework</div>
+                <div class="popup-content__body-column-value">
+                  <p>Angular (with Typescript)</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Global State</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Subject and BehaviorSubject as part of Angular library.
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Styling</div>
+                <div class="popup-content__body-column-value">
+                  <p>Custom CSS</p>
+                  <p>Media queries for responsiveness</p>
+                  <p>Material Design (Angular Material)</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Forms</div>
+                <div class="popup-content__body-column-value">
+                  <p>                    
+                    NgForm, as part of Angular library
+                  </p>
+              
+                </div>
+              </div>
+        
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>API calls</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  with AngularFirestore, as Service
+                </div>
+              </div>
+             
+            </div>
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Server
+              </h3>
+              <div class="popup-content__body-column-row">
+                Direct interraction Angular - Firestore via AngularFirestore service
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Authentication</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  AngularFireAuth service 
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">ORM</div>
+                <div class="popup-content__body-column-value">
+                  <p>To interract with FireStore, AngularFirestore library was used</p>
+                </div>
+              </div>
+            </div>
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Database
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">NoSQL</div>
+                <div class="popup-content__body-column-value">
+                  <p>                  
+                    FireStore 
+                  </p>                  
+                </div>
+              </div>
+              <h3 class="self-center popup-content__body-column-heading margin-top-md">
+                Deployment
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Whole App</div>
+                <div class="popup-content__body-column-value">
+                  <p>Angular deployed with Firebase hosting</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!-- 
+          Chat
+        -->
+        <div class="popup-content" id="chat-app">
+          <div class="popup-content__close">
+            <button class="popup-content__close-btn" onclick="hideProjectPopup()">
+              x
+            </button>
+          </div>
+          <div class="popup-content__header">
+            <div class="popup-content__btns">
+              <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/chat-react/" target="_blank"
+                rel="noopener noreferrer">Live Project</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/chat-react" target="_blank"
+                rel="noopener noreferrer">Source Code</a>
+              
+              <a class="popup-content__btns--btn">Presentation Video</a>
+            </div>
+            <div class="popup-content__header-icons">
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">REACT</p>
+                <img width="60px" height="" src="images/react.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">EXPRESS</p>
+                <img width="60px" height="" src="images/node.png" alt="" />
+              </div>
+        
+            </div>
+          </div>
+          <div class="popup-content__description">
+            <div class="popup-content__description-title">
+              <h2>Live Chat App</h2>
+            </div>
+            <div class="popup-content__description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis quidem incidunt odio ducimus accusamus facilis.
+              Tempora numquam cupiditate tempore magni possimus! Sunt, sapiente
+              saepe ab officia eveniet quo distinctio fugit aliquid a atque
+              quibusdam perspiciatis laudantium laborum doloremque qui?
+            </div>
+          </div>
+          <div class="popup-content__body">
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Frontend
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Framework</div>
+                <div class="popup-content__body-column-value">
+                  <p>React</p>
+                </div>
+              </div>
+              
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Styling</div>
+                <div class="popup-content__body-column-value">
+                  <p>Custom CSS</p>
+                  <p>Media queries for responsiveness</p>
+                  <p>Tachyons library (utility classes)</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Forms</div>
+                <div class="popup-content__body-column-value">
+                  <p>
+                    Standard React custom forms (ES6 Javascript)
+                  </p>        
+                </div>
+              </div>
+        
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Third Party libraries</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  <p>react-particles-js - for background</p> 
+                  <p>socket.io-client</p>
+                </div>
+              </div>
+        
+            </div>
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Server
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Framework</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Express.js
+                </div>
+              </div>
+              
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Chat library</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  socket.io
+                </div>
+              </div>
+              <h3 style="margin-top:1.5rem;" class="self-center popup-content__body-column-heading">
+                Deployment
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>React</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Deployed to Github Pages
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Express.js (Node.js)</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Deployed to Heroku
+                </div>
+              </div>
+             
+            </div>
+           
+          </div>
+        </div>
+        <!-- 
+          Recepes
+        -->
+        <div class="popup-content" id="recepes-app">
+          <div class="popup-content__close">
+            <button class="popup-content__close-btn" onclick="hideProjectPopup()">
+              x
+            </button>
+          </div>
+          <div class="popup-content__header">
+            <div class="popup-content__btns">
+              <a class="popup-content__btns--btn" href="#" target="_blank"
+                rel="noopener noreferrer">Live Project</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/recepes-app" target="_blank"
+                rel="noopener noreferrer">Source Code</a>
+              
+              <a class="popup-content__btns--btn">Presentation Video</a>
+            </div>
+            <div class="popup-content__header-icons">
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">REACT</p>
+                <img width="60px" height="" src="images/react.png" alt="" />
+              </div>             
+        
+            </div>
+          </div>
+          <div class="popup-content__description">
+            <div class="popup-content__description-title">
+              <h2>Recepes App</h2>
+            </div>
+            <div class="popup-content__description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis quidem incidunt odio ducimus accusamus facilis.
+              Tempora numquam cupiditate tempore magni possimus! Sunt, sapiente
+              saepe ab officia eveniet quo distinctio fugit aliquid a atque
+              quibusdam perspiciatis laudantium laborum doloremque qui?
+            </div>
+          </div>
+          <div class="popup-content__body">
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Frontend
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Framework</div>
+                <div class="popup-content__body-column-value">
+                  <p>React</p>
+                </div>
+              </div>
+              
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Styling</div>
+                <div class="popup-content__body-column-value">
+                  <p>Custom CSS</p>
+                  <p>Media queries for responsiveness</p>                  
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Forms</div>
+                <div class="popup-content__body-column-value">
+                  <p>
+                    Standard React Form (ES6 Javascript)
+                  </p>        
+                </div>
+              </div> 
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>API calls</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Javascript fetch API
+                </div>
+              </div>
+            </div>
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                API
+              </h3>
+              
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Source</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Third party API: https://api.edamam.com/search
+                </div>
+              </div>
+              
+              <h3 style="margin-top: 1.5rem;" class="self-center popup-content__body-column-heading">
+                Deployment
+              </h3>
+              
+              
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">React</div>
+                <div class="popup-content__body-column-value">
+                  <p>Deployed to Github Pages</p>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        <!-- 
+          Checkers
+        -->
+        <div class="popup-content" id="checkers">
+          <div class="popup-content__close">
+            <button class="popup-content__close-btn" onclick="hideProjectPopup()">
+              x
+            </button>
+          </div>
+          <div class="popup-content__header">
+            <div class="popup-content__btns">
+              <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/slavik-checkers-app/" target="_blank"
+                rel="noopener noreferrer">Live Project</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/slavik-checkers-app" target="_blank"
+                rel="noopener noreferrer">Source Code</a>
+              
+              <a class="popup-content__btns--btn">Presentation Video</a>
+            </div>
+            <div class="popup-content__header-icons">
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">REACT</p>
+                <img width="60px" height="" src="images/react.png" alt="" />
+              </div>  
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">REDUX</p>
+                <img width="60px" height="" src="images/redux.png" alt="" />
+              </div>
+        
+            </div>
+          </div>
+          <div class="popup-content__description">
+            <div class="popup-content__description-title">
+              <h2>Checkers Game App</h2>
+            </div>
+            <div class="popup-content__description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis quidem incidunt odio ducimus accusamus facilis.
+              Tempora numquam cupiditate tempore magni possimus! Sunt, sapiente
+              saepe ab officia eveniet quo distinctio fugit aliquid a atque
+              quibusdam perspiciatis laudantium laborum doloremque qui?
+            </div>
+          </div>
+          <div class="popup-content__body">
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Frontend
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Framework</div>
+                <div class="popup-content__body-column-value">
+                  <p>React</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Global State</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                  Redux state container
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Styling</div>
+                <div class="popup-content__body-column-value">
+                  <p>Custom CSS</p>
+                  <p>Media queries for responsiveness</p>                  
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Forms</div>
+                <div class="popup-content__body-column-value">
+                  <p>
+                    My Custom Form (ES6 Javascript)
+                  </p>        
+                </div>
+              </div>        
+              
+            </div>
+            
+            <div class="popup-content__body-column">
+              
+              <h3 class="self-center popup-content__body-column-heading margin-top-md">
+                Deployment
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">React</div>
+                <div class="popup-content__body-column-value">
+                  <p>Gighub Pages</p>
+                </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+        <!-- 
+          Furniture
+        -->
+        <div class="popup-content" id="furniture">
+          <div class="popup-content__close">
+            <button class="popup-content__close-btn" onclick="hideProjectPopup()">
+              x
+            </button>
+          </div>
+          <div class="popup-content__header">
+            <div class="popup-content__btns">
+              <a class="popup-content__btns--btn" href="https://gatsby-dream-furniture.netlify.app/" target="_blank"
+                rel="noopener noreferrer">Live Project</a>
+              <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/gatsby-dream-furniture" target="_blank"
+                rel="noopener noreferrer">Source Code</a>
+            
+              <a class="popup-content__btns--btn">Presentation Video</a>
+            </div>
+            <div class="popup-content__header-icons">
+              <div class="technology technology-small center-column">                
+                <img width="95px" height="" src="images/gatsby.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">REACT</p>
+                <img width="60px" height="" src="images/react.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <img width="60px" height="" src="images/graphql.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">NETLIFY</p>
+                <img width="55px" height="" src="images/netlify.png" alt="" />
+              </div>
+              <div class="technology technology-small center-column">
+                <p class="technology__text-small">CONTENFUL</p>
+                <img width="40px" height="" src="images/contentful.png" alt="" />
+              </div>
+        
+            </div>
+          </div>
+          <div class="popup-content__description">
+            <div class="popup-content__description-title">
+              <h2>Furniture Store App</h2>
+            </div>
+            <div class="popup-content__description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis quidem incidunt odio ducimus accusamus facilis.
+              Tempora numquam cupiditate tempore magni possimus! Sunt, sapiente
+              saepe ab officia eveniet quo distinctio fugit aliquid a atque
+              quibusdam perspiciatis laudantium laborum doloremque qui?
+            </div>
+          </div>
+          <div class="popup-content__body">
+            <div class="popup-content__body-column">
+              <h3 class="self-center popup-content__body-column-heading">
+                Frontend
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Framework</div>
+                <div class="popup-content__body-column-value">
+                  <p>Gatsby / React</p>
+                </div>
+              </div>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">
+                  <p>Styling</p>
+                </div>
+                <div class="popup-content__body-column-value">
+                 <p>Custom CSS, Media queries</p>
+                 <p>SASS</p>
+                </div>
+              </div>
+             
+        
+            </div>
+        
+            <div class="popup-content__body-column">
+        
+              <h3 class="self-center popup-content__body-column-heading margin-top-md">
+                Database
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Source</div>
+                <div class="popup-content__body-column-value">
+                  <p>Contentful, GraphQL</p>
+                </div>
+              </div>
+              <h3 style="margin-top: 1.5rem;" class="self-center popup-content__body-column-heading margin-top-md">
+                Deployment
+              </h3>
+              <div class="popup-content__body-column-row">
+                <div class="popup-content__body-column-item">Whole App</div>
+                <div class="popup-content__body-column-value">
+                  <p>Deployed to Netlify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
       </div>
     </div>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact__container self-center">
         <div class="contact__container-form">
-          <form action="#" class="form">
+          <form class="form" id="form" method="POST" action="https://formspree.io/v.shakhov@yahoo.ca">
             <div class="u-margin-bottom-medium">
               <h2 class="form__heading self-center">
                 Please fill in the form to contact me
@@ -453,9 +1489,8 @@
                 required
               ></textarea>
             </div>
-
             <div class="form__group">
-              <button class="btn btn--green">Submit</button>
+              <button class="btn btn--green" type="submit">Submit</button>
             </div>
           </form>
         </div>
@@ -464,51 +1499,104 @@
 
     <script
       type="text/javascript"
-      src="https://app.diagrams.net/js/viewer-static.min.js"
-    ></script>
+      src="https://app.diagrams.net/js/viewer-static.min.js"></script>
+    
     <script>
-      let item = ''
+      let item = "";   
+      
+      function closeNavigation() {
+        let checked = false;         
+        document.getElementById('navi-toggle').checked = false;        
+      }
+  
       function projectPopup(projectName) {
         document
-          .getElementById('popup-container')
-          .classList.add('popup-container')
-        document.getElementById('project-popup').classList.add('project-popup')
-        if (projectName === 'finances') {
-          item = 'finances'
+          .getElementById("popup-container")
+          .classList.add("popup-container");
+        document.getElementById("project-popup").classList.add("project-popup");
+        if (projectName === "finances") {
+          item = "finances";
           document
-            .getElementById('finances')
-            .classList.add('finances-container', 'popup-content__display')
+            .getElementById("finances")
+            .classList.add("finances-container", "popup-content__display");
         }
-        if (projectName === 'weightloss') {
-          item = 'weightloss'
+        if (projectName === "weightloss") {
+          item = "weightloss";
           document
-            .getElementById('weightloss')
-            .classList.add('weightloss-container', 'popup-content__display')
+            .getElementById("weightloss")
+            .classList.add("weightloss-container", "popup-content__display");
         }
-        if (projectName === 'checkers') {
-          item = 'checkers'
+        if (projectName === "checkers") {
+          item = "checkers";
           document
-            .getElementById('checkers')
-            .classList.add('checkers-container', 'popup-content__display')
+            .getElementById("checkers")
+            .classList.add("checkers-container", "popup-content__display");
         }
-        if (projectName === 'tandem') {
-          item = 'tandem'
+        if (projectName === "tandem") {
+          item = "tandem";
           document
-            .getElementById('tandem')
-            .classList.add('tandem-container', 'popup-content__display')
-          document.getElementById
+            .getElementById("tandem")
+            .classList.add("tandem-container", "popup-content__display");
+          document.getElementById;
+        }
+        if (projectName === "chat-app") {
+          item = "chat-app";
+          document
+            .getElementById("chat-app")
+            .classList.add("chat-app-container", "popup-content__display");
+        }
+        if (projectName === "recepes-app") {
+          item = "recepes-app";
+          document
+            .getElementById("recepes-app")
+            .classList.add("recepes-app-container", "popup-content__display");
+        }
+        if (projectName === "furniture") {
+          item = "furniture";
+          document
+            .getElementById("furniture")
+            .classList.add("furniture-container", "popup-content__display");
         }
 
-        console.log('working')
+        console.log("working");
       }
       function hideProjectPopup() {
         document
-          .getElementById('popup-container')
-          .classList.remove('popup-container')
+          .getElementById("popup-container")
+          .classList.remove("popup-container");
         document
           .getElementById(item)
-          .classList.remove(`${item}-container`, 'popup-content__display')
+          .classList.remove(`${item}-container`, "popup-content__display");
       }
+      /*
+      function sendEmail(e) {
+          console.log(e)
+          const form = document.getElementById('form');
+          const name = document.getElementById('name');
+          const email = document.getElementById('email');
+          const message = document.getElementById('message');
+          console.log(name.value, email.value, message.value);
+          if (!name.value || !email.value || !message.value) {
+            console.log("Please check your entries");
+            return false;
+          }
+          else {
+            const options = {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ name: name.value, email: email.value, message: message.value })
+            }
+            fetch('https://formspree.io/v.shakhov@yahoo.ca', options)
+              .then(data => console.log(data))
+              .catch(err => console.log(`error: ${err}`));      
+        }
+      }
+      */
+      
     </script>
+      
   </body>
 </html>
