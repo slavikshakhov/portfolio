@@ -562,12 +562,12 @@ body {
     margin: 0 auto;
     color: #265c88;
     font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: 4rem !important; }
+    font-weight: 800; }
   .project-card__list {
     width: 100%;
     margin: 1.5rem 0.7rem;
-    display: flex; }
+    display: flex;
+    margin-top: 4rem !important; }
   .project-card__col {
     display: flex;
     flex: 1;
