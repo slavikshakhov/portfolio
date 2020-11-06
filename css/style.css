@@ -563,7 +563,7 @@ body {
     color: #265c88;
     font-size: 2.2rem;
     font-weight: 800;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem !important; }
   .project-card__list {
     width: 100%;
     margin: 1.5rem 0.7rem;
