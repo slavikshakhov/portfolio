@@ -352,15 +352,7 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
-@media screen and (max-width: 600px) {
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::before { 
-    transform: rotate(0deg); 
-  }
 
-  .navigation__checkbox:checked + .navigation__button .navigation__icon::after { 
-    transform: rotate(0deg); 
-  }
-}
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(112, 230, 190, 0.8)), url(../images/header-background.jpg);
@@ -406,14 +398,7 @@ body {
     margin-top: 10rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .about {
-    transform: skewY(0deg);
-  }
-  .about > * {
-    transform: skewY(0deg); 
-  }
-}
+
 blockquote:before,
 blockquote:after {
   position: absolute;
@@ -554,21 +539,7 @@ blockquote:after {
     padding: 28rem 5rem 10rem 5rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .projects {    
-    padding: 32rem 5rem 10rem 5rem;
-    transform: skewY(0deg);
-  }
-  .projects > * {
-    transform: skewY(0deg); 
-  }
-  .project-card__btn-container {
-    transform: skewY(0deg);
-  }
-  .project-card__btn-container > * {
-    transform: skewY(0deg); 
-  }
-}
+
 
 .projects-description {
   font-family: 'Tillana', cursive; 
@@ -1033,6 +1004,35 @@ blockquote:after {
     font-style: italic; }
   .popup-content__body-column-space {
     height: 0.5rem; }
+
+@media screen and (max-width: 600px) {
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before { 
+    transform: rotate(0deg); 
+  }
+
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after { 
+    transform: rotate(0deg); 
+  }
+  .about {
+    transform: skewY(0deg);
+  }
+  .about > * {
+    transform: skewY(0deg); 
+  }
+  .projects {    
+    padding: 32rem 5rem 10rem 5rem;
+    transform: skewY(0deg);
+  }
+  .projects > * {
+    transform: skewY(0deg); 
+  }
+  .project-card__btn-container {
+    transform: skewY(0deg);
+  }
+  .project-card__btn-container > * {
+    transform: skewY(0deg); 
+  }
+}
 
 /*
 .finances-container {
