@@ -352,7 +352,15 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+@media screen and (max-width: 600px) {
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before { 
+    transform: rotate(0deg); 
+  }
 
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after { 
+    transform: rotate(0deg); 
+  }
+}
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(112, 230, 190, 0.8)), url(../images/header-background.jpg);
@@ -388,14 +396,22 @@ body {
   transform: skewY(-7deg);
   margin: 5rem 0;
   border-bottom: 12px solid #7ed56f; }
-  .about > * {
-    transform: skewY(7deg); }
+.about > * {
+  transform: skewY(7deg); }
 @media screen and (max-width: 1080px) {
   .about {
     align-items: start;
     padding: 5rem;
     height: 60rem;
     margin-top: 10rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    transform: skewY(0deg);
+  }
+  .about > * {
+    transform: skewY(0deg); 
   }
 }
 blockquote:before,
@@ -528,16 +544,32 @@ blockquote:after {
   align-items: center;
   justify-content: center;
   transform: skewY(-7deg);
-  margin-top: 5rem; }
-@media screen and (max-width: 1080px) {
-  .projects {    
-    padding: 28rem 5rem 10rem 5rem;
-  }
-
+  margin-top: 5rem; 
 }
 .projects > * {
   transform: skewY(7deg); 
 }
+@media screen and (max-width: 1080px) {
+  .projects {    
+    padding: 28rem 5rem 10rem 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects {    
+    padding: 32rem 5rem 10rem 5rem;
+    transform: skewY(0deg);
+  }
+  .projects > * {
+    transform: skewY(0deg); 
+  }
+  .project-card__btn-container {
+    transform: skewY(0deg);
+  }
+  .project-card__btn-container > * {
+    transform: skewY(0deg); 
+  }
+}
+
 .projects-description {
   font-family: 'Tillana', cursive; 
   margin-bottom: -28rem; 
@@ -760,8 +792,10 @@ blockquote:after {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .project-card__btn-container > * {
-    transform: skewY(7deg); }
+.project-card__btn-container > * {
+  transform: skewY(7deg); }
+  
+
 .project-card__btn {
   padding: 1rem 1.5rem;
   border: none;
@@ -813,6 +847,7 @@ blockquote:after {
     height: 12rem;
     width: 110%;
   }  
+  
   .project-card__btn {     
     margin-bottom: 0.8rem;
     border-radius: 3px;    
@@ -826,6 +861,7 @@ blockquote:after {
   }
 
 }
+
 
 
 .moveright {
