@@ -51,15 +51,15 @@
     <header class="header">
       
       <div class="header__text-box">
-        <h1 class="heading heading--primary">Portfolio</h1>
-        <h3 class="heading heading--secondary">Slavik Shakhov</h3>
+        <h1 class="heading heading--secondary">Vyacheslav Shakhov</h1>
+        <h3 class="heading heading--primary">Full Stack Developer</h3>
 
         <a href="#my-projects" class="btn btn--white btn--animated">See Projects</a>
       </div>
     </header>
     <section class="about" id="about">
       <blockquote>
-        I am a pharmacist licensed in Canada and Germany but my passion is programming. I focus on Javascript and I built compolex full stack applications in React and Node.js. I have also experimented with many other programming languages and frameworks (Angular, Vue, Gatsby, Laravel, Phoenix etc). But the most exciting for me is to solve problems and learn to advance my knowledge further
+        I hold university degrees in Farmacy and Computational Linguistics with focus on Speech Recognition and Machine Learning. I build compolex full stack applications primarily in React / Next.js and Node.js, but I also have experience with Angular, Vue, Gatsby, Laravel, Phoenix etc. I value the most clean robust code to create highly scalable, responsive and performant applications.
       </blockquote>
     </section>
     <section class="technologies-section" id="technologies">
@@ -75,6 +75,11 @@
                 <div class="technology technology-small center-column">
                   <p class="technology__text-small">REACT</p>
                   <img width="40px" height="" src="images/react.png" alt="" />
+                </div>
+              </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <img width="80px" height="" src="images/nextjs.png" alt="" />
                 </div>
               </div>
               <div class="technologies-col">
@@ -124,6 +129,12 @@
                 <div class="technology technology-small center-column">
                   <p class="technology__text-small">MYSQL</p>
                   <img width="60px" height="" src="images/mysql.png" alt="" />
+                </div>
+              </div>
+
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <img width="100px" height="" src="images/postgresql.png" alt="" />
                 </div>
               </div>
         
@@ -205,7 +216,7 @@
             </div>
           </div>
         
-          <div class="technologies-row">
+          <div class="technologies-row" style="border-bottom: none !important;">
             <div class="technologies-type">Languages</div>
             <div class="technologies-body">
               <div class="technologies-col">
@@ -225,6 +236,11 @@
                   <img width="70px" height="" src="images/php.png" alt="" />
                 </div>
               </div>
+              <div class="technologies-col">
+                <div class="technology technology-small center-column">
+                  <img width="100px" height="" src="images/elixir.png" alt="" />
+                </div>
+              </div>
         
             </div>
           </div>
@@ -236,17 +252,25 @@
 
    
 
-    <div class="" id="popup-container">
-      <section class="projects" id="my-projects">
-        <div class="projects__container">
+    <div class="popup" id="popup-container">
+      <div class="projects-description">
+        <p>
+          Take a look at some of my projects. I use the <span style="color: rgb(250, 69, 69) !important;">most mordern technologies</span> in all projects, see details. 
+          All projects are <span  style="color: rgb(250, 69, 69) !important;">responsive</span>, work equally well in all screen sizes. These are not just websites, but rather <span  style="color: rgb(250, 69, 69) !important;">full stack applications with complex functionality</span>. Some of the projects requires <span style="color: rgb(250, 69, 69) !important;">user registration and authentication</span>. If you want to skip registration, please log in with: <span style="color: rgb(49, 49, 49);">username:</span> Testing, <span style="color: rgb(49, 49, 49);">passrord:</span> Testing
+        </p>
+         
+      </div>
+      
+      <section class="projects" id="my-projects">        
+        <div class="projects__container">          
           <div class="project-card">
             <div class="project-card__content">
               <h3 class="project-card__heading">Home Finances App</h3>
               
               <div class="project-card__list">
                 <div class="project-card__col">
-                  <p class="project-card__item">React</p>
-                  <p class="project-card__item">Node.js</p>
+                  <p class="project-card__item" style="color: red !important;">React</p>
+                  <p class="project-card__item" style="color: red !important;">Node.js</p>
                   <p class="project-card__item">MySQL</p>                  
                 </div>
                 <div class="project-card__col">
@@ -267,9 +291,9 @@
               
               <div class="project-card__list">
                 <div class="project-card__col">
-                  <p class="project-card__item">React</p>
-                  <p class="project-card__item">Redux</p>
-                  <p class="project-card__item">Node.js</p>
+                  <p class="project-card__item" style="color: red !important;">React</p>
+                  <p class="project-card__item" style="color: red !important;">Redux</p>
+                  <p class="project-card__item" style="color: red !important;" >Node.js</p>
                 </div>
                 <div class="project-card__col">
                   <p class="project-card__item">Socket.io</p>
@@ -289,7 +313,7 @@
               
               <div class="project-card__list">
                 <div class="project-card__col">
-                  <p class="project-card__item">Angular</p>
+                  <p class="project-card__item" style="color: red !important;">Angular</p>
                   <p class="project-card__item">Material Design</p>
                   <p class="project-card__item">AngularFirestore</p>
                 </div>
@@ -311,12 +335,13 @@
               
               <div class="project-card__list">
                 <div class="project-card__col">
-                  <p class="project-card__item">React</p>
+                  <p class="project-card__item" style="color: red !important;">React</p>
+                  <p class="project-card__item" style="color: red !important;">Node.js</p>
                   <p class="project-card__item">Tachyons</p>                  
                 </div>
                 <div class="project-card__col">
                   <p class="project-card__item">Socket.io</p>
-                  <p class="project-card__item">Node.js</p>                  
+                                    
                 </div>
               </div>
             </div>
@@ -332,7 +357,7 @@
               
               <div class="project-card__list">
                 <div class="project-card__col">
-                  <p class="project-card__item">React</p>
+                  <p class="project-card__item" style="color: red !important;">React</p>
                   <p class="project-card__item">3rd party API</p>
                   <p class="project-card__item">MySQL</p>
                 </div>
@@ -352,8 +377,8 @@
               
               <div class="project-card__list">
                 <div class="project-card__col">
-                  <p class="project-card__item">React</p>
-                  <p class="project-card__item">Redux</p>                  
+                  <p class="project-card__item" style="color: red !important;">React</p>
+                  <p class="project-card__item" style="color: red !important;">Redux</p>                  
                 </div>
                 <div class="project-card__col">                  
                 </div>
@@ -371,8 +396,8 @@
               
               <div class="project-card__list">
                 <div class="project-card__col">
-                  <p class="project-card__item">Gatsby</p>
-                  <p class="project-card__item">React</p>
+                  <p class="project-card__item" style="color: red !important;">Gatsby</p>
+                  <p class="project-card__item" style="color: red !important;">React</p>
                 </div>
                 <div class="project-card__col">
                   <p class="project-card__item">Netlify</p>
@@ -405,36 +430,39 @@
               x
             </button>
           </div>
-          <div class="popup-content__header">
-            <div class="popup-content__btns">
-              <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/homefinances-client/"
-              target="_blank" rel="noopener noreferrer">Live Project</a>
+        
+          <div class="popup-content__header">            
+            
+            
+            <div class="popup-content__btns">   
+              <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/homefinances-client/" target="_blank"
+                rel="noopener noreferrer">Live Project</a>
               <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/homefinances-client" target="_blank" rel="noopener noreferrer">Source Code - Client</a>
               <a class="popup-content__btns--btn" href="https://github.com/slavikshakhov/homefinances-server"
-              target="_blank" rel="noopener noreferrer">Source Code - Server</a>
-              
-            </div>
-            <div class="popup-content__icons-container">
-              <div class="popup-content__header-icons popup-content__header-icons-moveleft">
-                <div class="technology technology-small center-column">
-                  <p class="technology__text-small">REACT</p>
-                  <img width="60px" height="" src="images/react.png" alt="" />
-                </div>
-                <div class="technology technology-small center-column">
-                  <p class="technology__text-small">EXPRESS</p>
-                  <img width="60px" height="" src="images/node.png" alt="" />
-                </div>
-                <div class="technology technology-small center-column">
-                  <p class="technology__text-small">MYSQL</p>
-                  <img width="100px" height="" src="images/mysql.png" alt="" />
-                </div>
-              </div>
-            </div>
+              target="_blank" rel="noopener noreferrer">Source Code - Server</a>              
+            </div>   
+             
             
           </div>
           <div class="popup-content__description">
             <div class="popup-content__description-title">
               <h2>Home Finances App</h2>
+              <div class="popup-content__icons-container">
+                <div class="popup-content__header-icons popup-content__header-icons-moveleft">
+                  <div class="technology technology-small center-column">
+                    <p class="technology__text-small">REACT</p>
+                    <img width="60px" height="" src="images/react.png" alt="" />
+                  </div>
+                  <div class="technology technology-small center-column">
+                    <p class="technology__text-small">EXPRESS</p>
+                    <img width="60px" height="" src="images/node.png" alt="" />
+                  </div>
+                  <div class="technology technology-small center-column">
+                    <p class="technology__text-small">MYSQL</p>
+                    <img width="100px" height="" src="images/mysql.png" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="popup-content__description-text">
               Interactive application with authentication to track personal expenses, incomes and check history of all transactions for a specific date
@@ -448,7 +476,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>React</p>
+                  <pc style="color: red !important; font-weight: 600;">React</pc>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -462,8 +490,8 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Styling</div>
                 <div class="popup-content__body-column-value">
-                  <p>Custom CSS</p>
-                  <p>TailwindCSS - utility classes</p>
+                  <p style="color: red !important; font-weight: 600;">Custom CSS</p>
+                  <p><span style="color: red !important; font-weight: 600;">TailwindCSS</span> - utility classes</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -500,7 +528,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>Express.js, using Node.js</p>
+                  <p>Express.js, using <span style="color: red !important; font-weight: 600;">Node.js</span></p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -527,7 +555,7 @@
                 <div class="popup-content__body-column-item">Database SQL</div>
                 <div class="popup-content__body-column-value">
                   <p>
-                    MySQL relational database with all applicable relationships
+                    <span style="color: red !important; font-weight: 600;">MySQL</span> relational database with all applicable relationships
                   </p>
                 </div>
               </div>
@@ -539,13 +567,13 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Client</div>
                 <div class="popup-content__body-column-value">
-                  <p>React deployed to GitHub Pages</p>
+                  <p>React deployed to <span style="color: red !important; font-weight: 600;">GitHub Pages</span></p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">API</div>
                 <div class="popup-content__body-column-value">
-                  <p>Node server and MySQL database deployed to Heroku</p>
+                  <p>Node server and MySQL database deployed to <span style="color: red !important; font-weight: 600;">Heroku</span></p>
                 </div>
               </div>
             </div>
@@ -564,7 +592,7 @@
               x
             </button>
           </div>
-          <div class="popup-content__header">
+          <div class="popup-content__header" style="justify-content: space-around;">
             <div class="popup-content__btns">
               <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/tandem-react-client/" target="_blank"
                 rel="noopener noreferrer">Live Project</a>
@@ -574,6 +602,7 @@
                 rel="noopener noreferrer">Source Code - Server</a>
               
             </div>
+            
             <div class="popup-content__icons-container popup-content__header-icons-moveleft">
               <div class="popup-content__header-icons">
                 <div class="technology technology-small center-column">
@@ -608,6 +637,7 @@
               The purpose of the application is for a registered user to find potential language partners based on the languages that the user speaks / wants to learn. The output is the list of all matched potential partners. Once selected, the user has an option to contact the potential partner via instant chat or email.
             </div>
           </div>
+          
           <div class="popup-content__body">
             <div class="popup-content__body-column">
               <h3 class="self-center popup-content__body-column-heading">
@@ -616,7 +646,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>React with React Hooks</p>
+                  <p><span style="color: red !important; font-weight: 600;">React</span> with React Hooks</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -624,13 +654,13 @@
                   <p>Global State</p>
                 </div>
                 <div class="popup-content__body-column-value">
-                  Redux library
+                  <span style="color: red !important; font-weight: 600;">Redux</span> library
                 </div>
               </div>
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Styling</div>
                 <div class="popup-content__body-column-value">
-                  <p>Custom CSS</p>
+                  <p style="color: red !important; font-weight: 600;">Custom CSS</p>
                   <p>Media queries for responsiveness</p>
                 </div>
               </div>
@@ -667,7 +697,7 @@
                   <p>Chat</p>
                 </div>
                 <div class="popup-content__body-column-value">
-                  Socket.io library - socket.io-client
+                  <span style="color: red !important; font-weight: 600;">Socket.io</span> library - socket.io-client
                 </div>
               </div>
             </div>
@@ -678,7 +708,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>Express.js, using Node.js</p>
+                  <p>Express.js, using <span style="color: red !important; font-weight: 600;">Node.js</span></p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -708,7 +738,7 @@
                     <span class="popup-content__body-column-marker">
                       SQL type:
                     </span>
-                    MySQL relational database
+                     <span style="color: red !important; font-weight: 600;">MySQL</span> relational database
                   </p>
                   <div class="popup-content__body-column-space"></div>
                   <p>
@@ -727,13 +757,13 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Client</div>
                 <div class="popup-content__body-column-value">
-                  <p>React deployed to GitHub Pages</p>
+                  <p>React deployed to <span style="color: red !important; font-weight: 600;">GitHub Pages</span></p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">API</div>
                 <div class="popup-content__body-column-value">
-                  <p>Node server and MySQL database deployed to Heroku</p>
+                  <p>Node server and MySQL database deployed to <span style="color: red !important; font-weight: 600;">Heroku</span></p>
                 </div>
               </div>
             </div>
@@ -748,7 +778,7 @@
               x
             </button>
           </div>
-          <div class="popup-content__header">
+          <div class="popup-content__header" style="justify-content: space-around;">
             <div class="popup-content__btns">
               <a class="popup-content__btns--btn" href="https://weight-loss-app-146e6.firebaseapp.com/login" target="_blank"
                 rel="noopener noreferrer">Live Project</a>
@@ -791,7 +821,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>Angular (with Typescript)</p>
+                  <p><span style="color: red !important; font-weight: 600;">Angular</span> (with Typescript)</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -805,9 +835,9 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Styling</div>
                 <div class="popup-content__body-column-value">
-                  <p>Custom CSS</p>
+                  <p style="color: red !important; font-weight: 600;">Custom CSS</p>
                   <p>Media queries for responsiveness</p>
-                  <p>Material Design (Angular Material)</p>
+                  <p><span style="color: red !important; font-weight: 600;">Material Design</span> (Angular Material)</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -859,7 +889,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">NoSQL</div>
                 <div class="popup-content__body-column-value">
-                  <p>                  
+                  <p style="color: red !important; font-weight: 600;">                  
                     FireStore 
                   </p>                  
                 </div>
@@ -870,7 +900,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Whole App</div>
                 <div class="popup-content__body-column-value">
-                  <p>Angular deployed with Firebase hosting</p>
+                  <p>Angular deployed with <span style="color: red !important; font-weight: 600;">Firebase hosting</span></p>
                 </div>
               </div>
               
@@ -886,7 +916,7 @@
               x
             </button>
           </div>
-          <div class="popup-content__header">
+          <div class="popup-content__header" style="justify-content: space-around;">
             <div class="popup-content__btns">
               <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/chat-react/" target="_blank"
                 rel="noopener noreferrer">Live Project</a>
@@ -922,16 +952,16 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>React</p>
+                  <p style="color: red !important; font-weight: 600;">React</p>
                 </div>
               </div>
               
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Styling</div>
                 <div class="popup-content__body-column-value">
-                  <p>Custom CSS</p>
+                  <p style="color: red !important; font-weight: 600;">Custom CSS</p>
                   <p>Media queries for responsiveness</p>
-                  <p>Tachyons library (utility classes)</p>
+                  <p><span style="color: red !important; font-weight: 600;">Tachions</span> library (utility classes)</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -963,7 +993,7 @@
                   <p>Framework</p>
                 </div>
                 <div class="popup-content__body-column-value">
-                  Express.js
+                  <span style="color: red !important; font-weight: 600;">Express.js</span>
                 </div>
               </div>
               
@@ -971,7 +1001,7 @@
                 <div class="popup-content__body-column-item">
                   <p>Chat library</p>
                 </div>
-                <div class="popup-content__body-column-value">
+                <div class="popup-content__body-column-value" style="color: red !important; font-weight: 600;">
                   socket.io
                 </div>
               </div>
@@ -983,15 +1013,15 @@
                   <p>React</p>
                 </div>
                 <div class="popup-content__body-column-value">
-                  Deployed to Github Pages
+                  Deployed to <span style="color: red !important; font-weight: 600;">Github Pages</span>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">
-                  <p>Express.js (Node.js)</p>
+                  <p>Express.js - <span style="color: red !important; font-weight: 600;">Node.js</span></p>
                 </div>
                 <div class="popup-content__body-column-value">
-                  Deployed to Heroku
+                  Deployed to <span style="color: red !important; font-weight: 600;">Heroku</span>
                 </div>
               </div>
              
@@ -1008,7 +1038,7 @@
               x
             </button>
           </div>
-          <div class="popup-content__header">
+          <div class="popup-content__header" style="justify-content: space-around;">
             <div class="popup-content__btns">
               <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/recepes-app" target="_blank"
                 rel="noopener noreferrer">Live Project</a>
@@ -1040,14 +1070,14 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>React</p>
+                  <p style="color: red !important; font-weight: 600;">React</p>
                 </div>
               </div>
               
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Styling</div>
                 <div class="popup-content__body-column-value">
-                  <p>Custom CSS</p>
+                  <p style="color: red !important; font-weight: 600;">Custom CSS</p>
                   <p>Media queries for responsiveness</p>                  
                 </div>
               </div>
@@ -1090,7 +1120,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">React</div>
                 <div class="popup-content__body-column-value">
-                  <p>Deployed to Github Pages</p>
+                  <p>Deployed to <span style="color: red !important; font-weight: 600;">Github Pages</span></p>
                 </div>
               </div>
               
@@ -1107,7 +1137,7 @@
               x
             </button>
           </div>
-          <div class="popup-content__header">
+          <div class="popup-content__header" style="justify-content: space-around;">
             <div class="popup-content__btns">
               <a class="popup-content__btns--btn" href="https://slavikshakhov.github.io/slavik-checkers-app/" target="_blank"
                 rel="noopener noreferrer">Live Project</a>
@@ -1143,7 +1173,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>React</p>
+                  <p style="color: red !important; font-weight: 600;">React</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -1151,13 +1181,13 @@
                   <p>Global State</p>
                 </div>
                 <div class="popup-content__body-column-value">
-                  Redux state container
+                  <span style="color: red !important; font-weight: 600;">Redux</span> state container
                 </div>
               </div>
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Styling</div>
                 <div class="popup-content__body-column-value">
-                  <p>Custom CSS</p>
+                  <p style="color: red !important; font-weight: 600;">Custom CSS</p>
                   <p>Media queries for responsiveness</p>                  
                 </div>
               </div>
@@ -1180,7 +1210,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">React</div>
                 <div class="popup-content__body-column-value">
-                  <p>Gighub Pages</p>
+                  <p style="color: red !important; font-weight: 600;">Gighub Pages</p>
                 </div>
               </div>        
             </div>
@@ -1195,7 +1225,7 @@
               x
             </button>
           </div>
-          <div class="popup-content__header">
+          <div class="popup-content__header" style="justify-content: space-around;">
             <div class="popup-content__btns">
               <a class="popup-content__btns--btn" href="https://gatsby-dream-furniture.netlify.app/" target="_blank"
                 rel="noopener noreferrer">Live Project</a>
@@ -1241,7 +1271,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Framework</div>
                 <div class="popup-content__body-column-value">
-                  <p>Gatsby / React</p>
+                  <p><span style="color: red !important; font-weight: 600;">Gatsby</span> / React</p>
                 </div>
               </div>
               <div class="popup-content__body-column-row">
@@ -1249,8 +1279,8 @@
                   <p>Styling</p>
                 </div>
                 <div class="popup-content__body-column-value">
-                 <p>Custom CSS, Media queries</p>
-                 <p>SASS</p>
+                 <p><span>Custom CSS,</span> Media queries</p>
+                 <p style="color: red !important; font-weight: 600;">SASS</p>
                 </div>
               </div>
              
@@ -1265,7 +1295,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Source</div>
                 <div class="popup-content__body-column-value">
-                  <p>Contentful, GraphQL</p>
+                  <p><span style="color: red !important; font-weight: 600;">Contentful,</span> GraphQL</p>
                 </div>
               </div>
               <h3 style="margin-top: 1.5rem;" class="self-center popup-content__body-column-heading margin-top-md">
@@ -1274,7 +1304,7 @@
               <div class="popup-content__body-column-row">
                 <div class="popup-content__body-column-item">Whole App</div>
                 <div class="popup-content__body-column-value">
-                  <p>Deployed to Netlify</p>
+                  <p>Deployed to <span style="color: red !important; font-weight: 600;">Netlify</span></p>
                 </div>
               </div>
             </div>
@@ -1290,7 +1320,7 @@
           <form class="form" id="form" action="https://formspree.io/f/xqkgbpal" method="POST">
             <div class="u-margin-bottom-medium">
               <h2 class="form__heading self-center">
-                Please fill in the form to contact me
+                Contact Me using the form or v.shakhov@yahoo.ca
               </h2>
             </div>
 
