@@ -521,10 +521,11 @@ blockquote:after {
   }
 }
 .projects {
-  padding: 32rem 5rem 10rem 5rem;
-  background-color: #7ed56f;
+  padding: 10rem 5rem;
+  background-color: #b3ebaa;
   opacity: 0.8;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   transform: skewY(-7deg);
@@ -533,20 +534,33 @@ blockquote:after {
 .projects > * {
   transform: skewY(7deg); 
 }
+.credentials {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: rgb(248, 174, 174);
+}
+.emphasis {
+  color: red;
+}
+.credentials > * {
+  font-weight: 700;
+  color: black;
+}
 @media screen and (max-width: 1080px) {
   .projects {    
-    padding: 28rem 5rem 10rem 5rem;
+    padding: 8rem 5rem;
   }
 }
 
 
-.projects-description {
-  font-family: 'Tillana', cursive; 
-  margin-bottom: -28rem; 
+.projects-description {  
+  margin-bottom: 4rem; 
   width: 80%; 
-  font-size: 1.8rem;  
+  font-size: 2.2rem;  
   font-weight: 500;
-  color: rgb(78, 77, 77); 
+  color: black; 
   z-index: 1000;
 }
 .projects__container {
@@ -561,32 +575,27 @@ blockquote:after {
   }
   .projects-description {
     width: 100%;
-    text-align: center;
-    margin-bottom: -30rem;
+    text-align: center;    
     font-size: 1.4rem;
     font-weight: 400;
   }
 }
 .contact {
-  padding: 15rem 0;
-  /*
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary-dark
-  );
-  */
-  width: 100%; }
-  .contact__container {
-    width: 70%;
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../images/valencia.jpg);
-    background-size: 100%;
-    border-radius: 3px;
-    box-shadow: 5px 10px 8px #888888;
-    height: 50rem; }
-    .contact__container-form {
-      width: 50%;
-      padding: 6rem; }
+  padding: 15rem 0; 
+  width: 100%; 
+}
+.contact__container {
+  width: 70%;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../images/valencia.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 5px 10px 8px #888888;
+  height: 50rem; 
+}
+.contact__container-form {
+  width: 50%;
+  padding: 6rem; 
+}
 
 @media screen and (max-width: 1460px) {
   .technologies {
@@ -1018,8 +1027,7 @@ blockquote:after {
   .about > * {
     transform: skewY(0deg); 
   }
-  .projects {    
-    padding: 32rem 5rem 10rem 5rem;
+  .projects {        
     transform: skewY(0deg);
   }
   .projects > * {
@@ -1034,9 +1042,7 @@ blockquote:after {
   .about {
     padding: 18rem 1rem 25rem 1rem;
   }
-  .projects-description {
-    margin-bottom: -32rem;
-  }
+  
 }
 
 /*
