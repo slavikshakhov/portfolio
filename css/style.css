@@ -560,7 +560,7 @@ blockquote:after {
 
 
 .projects-description {  
-  margin-bottom: 4rem; 
+  margin-bottom: 2rem; 
   padding-right: 2rem; 
   padding-left: 2rem;
   font-size: 2.2rem;  
@@ -868,10 +868,13 @@ blockquote:after {
 .popup-content__display {
   display: block !important;
   z-index: 3000;
-  position: fixed;
-  overflow-y: scroll;
-  left: 0;  
-  top: 0;
+  position: absolute;
+  /*
+  position: sticky;
+  position: -webkit-sticky;
+  */
+  
+  left: 0;    
   height: auto;
   background-color: #e6e6e6;
   animation: moveToRight 0.2s;
@@ -933,9 +936,7 @@ blockquote:after {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1.5rem;
-    margin-top: -1.5rem; 
-    
+    padding: 1.5rem 0;   
   }
   
   .popup-content__header-icons {
@@ -968,6 +969,8 @@ blockquote:after {
     
     font-size: 1.8rem;
     color: #4d4d4d; }
+
+
   
 @media only screen and (max-width: 1150px) {
   .popup-content__description-text {
@@ -1066,6 +1069,46 @@ blockquote:after {
   
     
 }
+.finances-container, .tandem-container, .weighloss-container, .chat-app-container {
+  top: 36rem;
+}
+.recepes-app-container, .checkers-container, .furniture-container {
+  top: 65rem;
+}
+
+@media only screen and (max-width: 1460px) {
+  .chat-app-container {
+    top: 65rem;
+  }
+  .recepes-app-container, .checkers-container {
+    top: 95rem;
+  }
+  .furniture-container {
+    top: 120rem;
+  }
+}
+@media only screen and (max-width: 1020px) { 
+  .tandem-container {
+    top: 65rem;
+  }
+  .weighloss-container {
+    top: 95rem;
+  }
+  .chat-app-container {
+    top: 125rem;
+  }
+  .recepes-app-container {
+    top: 150rem;
+  }
+  .checkers-container {
+
+  }
+  .furniture-container {
+
+  }
+}
+
+
 
 
 @keyframes moveToRight {
