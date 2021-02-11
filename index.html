@@ -276,7 +276,7 @@
             <p><span>passrord:</span> Testing</p>  
           </div>       
         </div>
-        <div class="projects__container">          
+        <div class="projects__container" id="projects-container">          
           <div class="project-card">
             <div class="project-card__content">
               <h3 class="project-card__heading">Home Finances App</h3>
@@ -1398,6 +1398,10 @@
         document
           .getElementById("popup-container")
           .classList.add("popup-container");
+
+        document.getElementById('projects-container').style.display = 'none';
+        document.getElementById('my-projects').style.paddingBottom = '40rem';
+
         document.getElementById("project-popup").classList.add("project-popup");
         if (projectName === "finances") {
           item = "finances";
@@ -1453,6 +1457,8 @@
           .getElementById(item)
           .classList.remove(`${item}-container`, "popup-content__display");
         document.getElementById('project-popup').style.display = 'none';
+        document.getElementById('projects-container').style.display = 'flex';
+        document.getElementById('my-projects').style.paddingBottom = '10rem';
       }
       /*
       function sendEmail(e) {
