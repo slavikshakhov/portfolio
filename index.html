@@ -25,7 +25,7 @@
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onclick="isChecked()" />
 
-      <label for="navi-toggle" class="navigation__button">
+      <label for="navi-toggle" class="navigation__button" id="navigation-button">
         <span class="navigation__icon">&nbsp;</span>
       </label>
 
@@ -294,7 +294,7 @@
               </div>
             </div>
             <div class="project-card__btn-container">
-              <button class="project-card__btn" onclick="projectPopup('finances')">
+              <button class="project-card__btn" onclick="projectPopup('finances')" id="details">
                 details
               </button>
             </div>
@@ -1399,14 +1399,25 @@
       src="https://app.diagrams.net/js/viewer-static.min.js"></script>
     
     <script>
-      let item = "";   
+      let item = ""; 
       
+      /*
+      let body = document.getElementsByTagName('body')[0];      
+      body.addEventListener("click", function (e) {          
+          closeNavigation();
+          hideProjectPopup();
+          e.stopPropagation()
+        }, false);
+
+      */
       function closeNavigation() {
         let checked = false;         
         document.getElementById('navi-toggle').checked = false;        
       }
   
       function projectPopup(projectName) {
+        document.getElementById('navigation-button').style.display = 'none'
+        document.getElementById('navigation-background').style.display = 'none'
         document.getElementById('project-popup').style.display = 'block';
         document
           .getElementById("popup-container")
@@ -1466,6 +1477,8 @@
         console.log("working");
       }
       function hideProjectPopup() {
+        document.getElementById('navigation-button').style.display = 'block'
+        document.getElementById('navigation-background').style.display = 'block'
         document
           .getElementById("popup-container")
           .classList.remove("popup-container");
